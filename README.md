@@ -1,6 +1,6 @@
 # ML-for-Credit-Card-Fraud-Detection
 
-Main Challenges in Credit Card Fraud Detection
+##Main Challenges in Credit Card Fraud Detection
 
 - **Enormous data** processed daily requires fast models to respond to fraud in real-time[1][3]
 - **Imbalanced data**, with 99.8% of transactions being non-fraudulent, makes detecting fraud difficult[3][6]
