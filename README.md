@@ -44,6 +44,4 @@ This project focuses on detecting credit card fraud using machine learning techn
   - **Explainability:** Incorporating tools like SHAP or LIME to improve model transparency and explainability in fraud detection.
   - **Advanced ensembling:** Implementing stacking methods, where the output of one model feeds into another, to further improve accuracy.
 
----
 
-This version adds a bit more detail while keeping it clear and concise for a README section.
