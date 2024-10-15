@@ -25,23 +25,24 @@ Here's a slightly more detailed version for your README:
 This project focuses on detecting credit card fraud using machine learning techniques. The application preprocesses transaction data by applying PCA for dimensionality reduction and uses SMOTE to handle class imbalance. The main models used are SVM and XGBoost, which are combined into an ensemble using soft voting to enhance prediction robustness. The model evaluates performance through key metrics such as Accuracy, Precision, Recall, F1-Score, Matthews Correlation Coefficient (MCC), and AUC-ROC.
 
 ### Technologies Used:
-- **SVM (Support Vector Machine):** Chosen for its effectiveness in high-dimensional spaces, ideal for distinguishing fraudulent transactions in complex datasets.
-- **XGBoost:** Known for its high performance in classification tasks, handling class imbalance, and focusing on difficult cases.
-- **PCA (Principal Component Analysis):** Reduces the dataset's dimensionality, improving both speed and efficiency while maintaining important data variance.
-- **SMOTE (Synthetic Minority Over-sampling Technique):** Balances the dataset by generating synthetic samples for underrepresented (fraudulent) classes, preventing model bias.
-- **Ensemble VotingClassifier:** Combines SVM and XGBoost, leveraging their strengths for better overall performance by averaging predicted probabilities.
-- **GridSearchCV & RandomizedSearchCV:** Used for hyperparameter tuning to optimize model performance.
+- **SVM (Support Vector Machine):** Efficient in high-dimensional spaces, ideal for detecting fraudulent transactions in complex datasets.
+- **XGBoost:** Known for high performance in classification, handling class imbalance, and focusing on difficult cases.
+- **PCA (Principal Component Analysis):** Reduces dimensionality to enhance computation speed and maintain data variance.
+- **SMOTE (Synthetic Minority Over-sampling Technique):** Balances the dataset by generating synthetic samples for minority (fraudulent) classes, mitigating bias.
+- **Ensemble VotingClassifier:** Combines SVM and XGBoost, using soft-voting to leverage their strengths for improved accuracy.
+- **GridSearchCV & RandomizedSearchCV:** Applied for hyperparameter tuning to optimize model performance.
+- **Threshold Tuning:** Optimized the precision-recall threshold to improve key metrics like precision and F1-Score.
 
 ### Challenges & Future Work:
 - **Challenges:**
-  - **Class imbalance:** Fraudulent transactions are a small minority, making accurate detection challenging. SMOTE was used to improve balance, but further refinement is needed.
-  - **Computation time:** Training models, especially during hyperparameter tuning and ensemble building, can be time-consuming, affecting real-time applicability.
-  - **Overfitting:** Preventing overfitting and ensuring models generalize well to unseen data is a continuous focus, with PCA helping mitigate this.
+  - **Class imbalance:** Fraud transactions are rare. SMOTE improved balance, but further refinement is needed for better precision and recall.
+  - **Computation time:** Training, especially during hyperparameter tuning, is time-consuming. Optimizing for real-time use remains a focus.
+  - **Overfitting:** PCA helps reduce overfitting, but continuous effort is needed to ensure generalization on unseen data.
+  
 
 - **Future Work:**
-  - **Real-time fraud detection:** Optimizing the system for real-time detection to handle continuous transaction streams.
-  - **Feature engineering:** Exploring advanced techniques to extract more meaningful features and boost model performance.
-  - **Explainability:** Incorporating tools like SHAP or LIME to improve model transparency and explainability in fraud detection.
-  - **Advanced ensembling:** Implementing stacking methods, where the output of one model feeds into another, to further improve accuracy.
-
+  - **Real-time fraud detection:** Optimizing the system for real-time fraud detection in continuous transaction streams.
+  - **Feature engineering:** Exploring advanced techniques to extract better features and boost model performance.
+  - **Explainability:** Using tools like SHAP or LIME to improve model transparency and explain fraud detection decisions.
+  - **Advanced ensembling:** Implementing stacking methods to further improve accuracy by combining multiple models.
 
