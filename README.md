@@ -46,5 +46,5 @@ This project focuses on detecting credit card fraud using machine learning techn
   - **Real-time fraud detection:** Optimizing the system for real-time fraud detection in continuous transaction streams.
   - **Feature engineering:** Exploring advanced techniques to extract better features and boost model performance.
   - **Explainability:** Using tools like SHAP or LIME to improve model transparency and explain fraud detection decisions.
-  - **Advanced ensembling:** Implementing stacking methods to further improve accuracy by combining multiple models.
+  
 
